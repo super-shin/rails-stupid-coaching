@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+.answer {
+  background-color: rgb(255, 255, 228);
+}
+.d-flex {
+  width: 500px;
+}

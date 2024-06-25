@@ -1,0 +1,18 @@
+
+<div class="border-start border-5 px-3 m-5">
+  <p class="fw-normal"><%= @ans %></p>
+  <p class="fst-italic">-You</p>
+</div>
+
+<div class="border-start border-5 px-3 answer m-5">
+  <% if @ans.downcase == "i am going to work" %>
+    <p class="fw-bold"><%= @responses[0] %></p>
+    <% elsif @ans.ends_with?("?") %>
+      <p class="fw-bold"><%= @responses[1] %></p>
+    <% else %>
+      <p class="fw-bold"><%= @responses[2] %></p>
+  <% end %>
+  <p class="fst-italic">-Your coach</p>
+</div>
+
+<%= link_to "Ask a new question", ask_path %>
