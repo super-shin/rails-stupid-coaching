@@ -13,9 +13,35 @@
  *= require_tree .
  *= require_self
  */
-.answer {
-  background-color: rgb(255, 255, 228);
+html, body {
+  height: 100vh;
+  background: rgb(72, 182, 153);
+  background-image: linear-gradient(
+    90deg,
+    rgba(72, 182, 153, 0.8) 10%,
+    rgba(56, 143, 168, 0.8) 48%,
+    rgba(94, 73, 214, 0.8) 98%
+  );
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-.d-flex {
-  width: 500px;
+
+.typo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 8vw;
+  color: white;
+  opacity: 0.4;
+  text-align: center;
+  white-space: nowrap;
+}
+.answer {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: xx-large;
+  width: 100%;
+}
+
+.fst-italic {
+  color: rgb(194, 194, 194);
 }
